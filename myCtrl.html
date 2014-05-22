@@ -1,0 +1,10 @@
+<div ng-app="myApp">
+    <ng-form ng-controller="myCtrl">
+        Saving: {{isSaving}}
+        <fieldset ng-disabled="isSaving">
+            <input type="text" ng-model="btnVal"/>
+            <input type="button" ng-model="btnVal" value="{{btnVal}}"/>
+            <button ng-click="save()">Save Me Maybe</button>
+        </fieldset>
+    </ng-form>
+</div>
